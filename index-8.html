@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>St. Louis Intellectual Grooming School | Raising Champions. Building Independent Thinkers.</title>
+<meta name="description" content="At St. Louis Intellectual Grooming School, we transform students into champions through quality assurance education, dedicated guidance and a serene learning environment." />
+<meta name="theme-color" content="#1F3A12" />
+<meta property="og:title" content="St. Louis Intellectual Grooming School" />
+<meta property="og:description" content="Raising Champions. Building Independent Thinkers. Admissions are ongoing." />
+<meta property="og:image" content="school-crest.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "School",
+  "name": "St. Louis Intellectual Grooming School",
+  "telephone": "+2347060618913",
+  "logo": "school-crest.png",
+  "sameAs": ["https://wa.me/2347060618913"]
+}
+</script>
+
+<style>
+  :root {
+    --forest: #1F3A12;
+    --olive: #5E8A1A;
+    --lime: #A7D140;
+    --paper: #FBFCF8;
+    --mist: #F1F5EA;
+    --ink: #172013;
+    --text: #3E4A3A;
+    --line: #DCE5D0;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  body {
+    font-family: var(--sans);
+    color: var(--text);
+    background: var(--paper);
+    line-height: 1.65;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--lime); outline-offset: 3px; border-radius: 6px; }
+
+  .wrap { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 22px; }
+  section { padding: 88px 0; }
+
+  h1, h2, h3 { font-family: var(--serif); color: var(--ink); line-height: 1.15; font-weight: 600; letter-spacing: -0.01em; }
+  h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); }
+  .lead { font-size: 1.15rem; max-width: 56ch; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    padding: 14px 26px; border-radius: 999px; font-weight: 600; font-size: 1rem;
+    border: 2px solid transparent; cursor: pointer; transition: background .2s, color .2s, border-color .2s;
+  }
+  .btn-primary { background: var(--olive); color: #fff; }
+  .btn-primary:hover { background: var(--forest); }
+  .btn-ghost { border-color: var(--forest); color: var(--forest); }
+  .btn-ghost:hover { background: var(--forest); color: #fff; }
+  .btn-light { background: var(--lime); color: var(--forest); }
+  .btn-light:hover { background: #fff; }
+  .btn-outline-light { border-color: rgba(255,255,255,.55); color: #fff; }
+  .btn-outline-light:hover { background: #fff; color: var(--forest); }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(251,252,248,.94); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 16px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .crest {
+    width: 44px; height: 44px; border-radius: 50%; background: var(--forest); color: var(--lime);
+    display: grid; place-items: center; overflow: hidden; flex-shrink: 0;
+    font-family: var(--serif); font-weight: 700; font-size: .85rem;
+  }
+  .crest img { width: 100%; height: 100%; object-fit: cover; }
+  .brand-name { font-family: var(--serif); font-weight: 600; color: var(--ink); line-height: 1.15; font-size: 1.02rem; }
+  .brand-name small { display: block; font-family: var(--sans); font-weight: 500; font-size: .78rem; color: var(--olive); }
+  nav ul { display: flex; gap: 30px; font-weight: 500; font-size: .98rem; }
+  nav a:hover { color: var(--olive); }
+  .menu-btn { display: none; width: 44px; height: 44px; border-radius: 10px; cursor: pointer; }
+  .menu-btn span, .menu-btn span::before, .menu-btn span::after {
+    display: block; width: 22px; height: 2px; background: var(--ink); position: relative; margin: auto; content: "";
+  }
+  .menu-btn span::before { position: absolute; top: -7px; }
+  .menu-btn span::after { position: absolute; top: 7px; }
+
+  /* Hero */
+  .hero { padding: 64px 0 88px; background: linear-gradient(180deg, var(--mist), var(--paper)); }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
+  .status {
+    display: inline-flex; align-items: center; gap: 10px; font-weight: 600; font-size: .92rem;
+    color: var(--forest); background: #fff; border: 1px solid var(--line); padding: 8px 16px; border-radius: 999px; margin-bottom: 24px;
+  }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--olive); box-shadow: 0 0 0 0 rgba(94,138,26,.5); animation: pulse 2s infinite; }
+  @keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(94,138,26,0); } 100% { box-shadow: 0 0 0 0 rgba(94,138,26,0); } }
+  h1 { font-size: clamp(2.5rem, 6vw, 4.2rem); margin-bottom: 22px; }
+  h1 em { font-style: italic; font-weight: 500; color: var(--olive); display: block; }
+  .hero .lead { margin-bottom: 32px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero-photo { position: relative; }
+  .hero-photo img { border-radius: 220px 220px 24px 24px; aspect-ratio: 4/5; object-fit: cover; width: 100%; }
+  .badge {
+    position: absolute; left: -22px; bottom: 36px; background: var(--forest); color: #fff;
+    padding: 16px 22px; border-radius: 16px; max-width: 220px; font-size: .92rem; line-height: 1.4;
+    box-shadow: 0 16px 40px rgba(31,58,18,.25);
+  }
+  .badge strong { display: block; font-family: var(--serif); font-size: 1.15rem; color: var(--lime); font-weight: 600; }
+
+  /* About */
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+  .about-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .about-photos img { border-radius: 18px; aspect-ratio: 3/4; object-fit: cover; width: 100%; }
+  .about-photos img:last-child { margin-top: 36px; }
+  .about p { margin: 18px 0 26px; }
+  .checks li { display: flex; gap: 12px; padding: 11px 0; border-top: 1px solid var(--line); font-weight: 500; color: var(--ink); }
+  .checks li:last-child { border-bottom: 1px solid var(--line); }
+  .checks svg { flex-shrink: 0; margin-top: 4px; color: var(--olive); }
+
+  /* Approach */
+  .approach { background: var(--mist); }
+  .head { max-width: 620px; margin-bottom: 48px; }
+  .head p { margin-top: 14px; }
+  .cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 28px 24px; }
+  .icon { width: 48px; height: 48px; border-radius: 12px; background: var(--forest); color: var(--lime); display: grid; place-items: center; margin-bottom: 20px; }
+  .card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+  .card p { font-size: .98rem; }
+
+  /* Admissions */
+  .admissions { padding: 88px 0 0; }
+  .band {
+    background: var(--forest); color: #E6EEDD; border-radius: 28px; padding: 56px;
+    display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px; align-items: center;
+  }
+  .band h2 { color: #fff; margin-bottom: 14px; }
+  .band .actions { margin-top: 28px; }
+  .phone-card { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16); border-radius: 20px; padding: 28px; }
+  .phone-card small { color: var(--lime); font-weight: 600; font-size: .9rem; }
+  .phone-card a { display: block; font-family: var(--serif); font-size: 1.7rem; color: #fff; margin: 6px 0 12px; font-weight: 600; }
+  .phone-card p { font-size: .95rem; }
+
+  /* Referral */
+  .referral-box {
+    display: grid; grid-template-columns: 1fr auto; gap: 48px; align-items: center;
+    border: 1px solid var(--line); border-radius: 28px; padding: 48px; background: #fff;
+  }
+  .referral-box p { margin: 14px 0 26px; max-width: 52ch; }
+  .amount { text-align: center; padding: 28px 40px; background: var(--mist); border-radius: 22px; }
+  .amount b { display: block; font-family: var(--serif); font-size: 3.6rem; color: var(--olive); line-height: 1.1; font-weight: 700; }
+  .amount span { font-size: .92rem; font-weight: 500; }
+
+  /* Gallery */
+  .gallery { background: var(--mist); }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  .grid figure { position: relative; overflow: hidden; border-radius: 18px; aspect-ratio: 3/4; }
+  .grid figure:nth-child(1), .grid figure:nth-child(4) { aspect-ratio: 3/3.6; }
+  .grid img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+  .grid figure:hover img { transform: scale(1.04); }
+  .grid figcaption {
+    position: absolute; inset: auto 0 0 0; padding: 40px 16px 14px; color: #fff; font-weight: 600; font-size: .95rem;
+    background: linear-gradient(transparent, rgba(23,32,19,.8));
+  }
+
+  /* Contact */
+  .contact-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
+  .details { margin: 28px 0; }
+  .details li { display: flex; gap: 14px; align-items: center; padding: 14px 0; border-top: 1px solid var(--line); }
+  .details li:last-child { border-bottom: 1px solid var(--line); }
+  .details .icon { width: 42px; height: 42px; margin: 0; flex-shrink: 0; }
+  .details small { display: block; color: var(--olive); font-weight: 600; font-size: .85rem; }
+  .details a, .details span.v { color: var(--ink); font-weight: 600; word-break: break-word; }
+  form { background: #fff; border: 1px solid var(--line); border-radius: 24px; padding: 36px; }
+  form h3 { font-size: 1.5rem; margin-bottom: 6px; }
+  form > p { font-size: .95rem; margin-bottom: 24px; }
+  .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .full { grid-column: 1 / -1; }
+  label { display: block; font-weight: 600; font-size: .9rem; color: var(--ink); margin-bottom: 6px; }
+  input, select, textarea {
+    width: 100%; padding: 13px 14px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--paper);
+  }
+  input:focus, select:focus, textarea:focus { outline: none; border-color: var(--olive); background: #fff; }
+  textarea { min-height: 110px; resize: vertical; }
+  form .btn { width: 100%; margin-top: 4px; }
+  #feedback { display: none; margin-top: 16px; padding: 14px 16px; border-radius: 12px; background: var(--mist); color: var(--forest); font-size: .95rem; }
+
+  /* Footer */
+  footer { background: var(--ink); color: #B9C5B2; padding: 56px 0 28px; font-size: .95rem; }
+  .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,.12); }
+  footer .brand-name { color: #fff; }
+  footer .brand-name small { color: var(--lime); }
+  footer ul { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+  footer a:hover { color: #fff; }
+  .copy { padding-top: 22px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; font-size: .88rem; }
+
+  /* Floating WhatsApp */
+  .wa {
+    position: fixed; right: 18px; bottom: 18px; z-index: 40; width: 56px; height: 56px; border-radius: 50%;
+    background: #25D366; display: grid; place-items: center; box-shadow: 0 10px 28px rgba(0,0,0,.25);
+  }
+  .wa svg { width: 28px; height: 28px; fill: #fff; }
+
+  /* Responsive */
+  @media (max-width: 960px) {
+    .hero-grid, .about-grid, .contact-grid, .band, .referral-box { grid-template-columns: 1fr; }
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    .grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-photo { max-width: 460px; }
+    .badge { left: 12px; }
+    .band, .referral-box { padding: 32px 24px; }
+    .amount { padding: 22px; }
+    .menu-btn { display: block; }
+    nav ul {
+      position: absolute; top: 72px; left: 0; right: 0; flex-direction: column; gap: 0;
+      background: var(--paper); border-bottom: 1px solid var(--line); padding: 8px 22px 18px; display: none;
+    }
+    nav ul.open { display: flex; }
+    nav li a { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .nav-cta { display: none; }
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    section { padding: 64px 0; }
+    .admissions { padding-top: 64px; }
+    .cards { grid-template-columns: 1fr; }
+    .fields { grid-template-columns: 1fr; }
+    form { padding: 24px 20px; }
+    .about-photos img:last-child { margin-top: 20px; }
+    .actions .btn { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="St. Louis Intellectual Grooming School home">
+      <div class="crest">
+        <img src="school-crest.png" alt="School crest" onerror="this.remove(); this.parentNode.textContent='SL';" />
+      </div>
+      <div class="brand-name">St. Louis Intellectual<small>Grooming School</small></div>
+    </a>
+    <nav aria-label="Primary">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#referral">Referral</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#admissions" class="btn btn-primary nav-cta" style="padding:10px 22px;">Apply now</a>
+    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="status"><span class="dot"></span> Admissions are currently ongoing</div>
+        <h1>Raising Champions.<em>Building Independent Thinkers.</em></h1>
+        <p class="lead">We transform students into champions through quality assurance education, dedicated guidance and a serene learning environment.</p>
+        <div class="actions">
+          <a href="#admissions" class="btn btn-primary">Apply for admission</a>
+          <a href="#contact" class="btn btn-ghost">Contact the school</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="Students learning together in a bright classroom" fetchpriority="high" />
+        <div class="badge"><strong>Academic excellence</strong>Dedicated guidance and independent thinking</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="wrap about-grid">
+      <div class="about-photos">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Teacher guiding students" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80" alt="Students studying with textbooks" loading="lazy" />
+      </div>
+      <div>
+        <h2>Committed to excellence and independent learning</h2>
+        <p>St. Louis Intellectual Grooming School nurtures disciplined, articulate and self-reliant learners. Through structured mentorship and a calm academic setting, every child learns to think critically and succeed with integrity.</p>
+        <ul class="checks">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Quality assurance curriculum</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Serene and supportive learning environment</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Independent examination preparation</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Student confidence and personal development</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section id="approach" class="approach">
+    <div class="wrap">
+      <div class="head">
+        <h2>How we groom intellectual champions</h2>
+        <p>Strong foundational teaching, balanced with personal accountability, so every student builds lasting confidence.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <h3>Quality assurance curriculum</h3>
+          <p>A structured approach designed to build strong academic foundations.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Independent exam preparation</h3>
+          <p>Preparing students to sit external examinations with confidence.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Serene learning environment</h3>
+          <p>A supportive atmosphere that encourages focus and effective learning.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div>
+          <h3>Champion development</h3>
+          <p>Building the knowledge, discipline and confidence needed to succeed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions -->
+  <section id="admissions" class="admissions">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Admissions are currently ongoing</h2>
+          <p>Take the next step towards academic excellence. Enrol your child at St. Louis Intellectual Grooming School.</p>
+          <div class="actions">
+            <a href="#contact" class="btn btn-light" data-enquiry="admission">Make an enquiry</a>
+            <a href="https://wa.me/2347060618913?text=Hello%20St.%20Louis%20Intellectual%20Grooming%20School%2C%20I%20would%20like%20to%20make%20an%20admission%20enquiry." target="_blank" rel="noopener" class="btn btn-outline-light">WhatsApp us</a>
+          </div>
+        </div>
+        <div class="phone-card">
+          <small>Admissions office</small>
+          <a href="tel:+2347060618913">+234 706 061 8913</a>
+          <p>Call or message us for admission requirements, available classes and schedule details.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Referral -->
+  <section id="referral">
+    <div class="wrap">
+      <div class="referral-box">
+        <div>
+          <h2>Refer a student. Earn ₦7,500.</h2>
+          <p>Our referral cashback programme rewards you when you introduce a family to quality education at St. Louis.</p>
+          <div class="actions">
+            <a href="https://wa.me/2347060618913?text=Hello%20St.%20Louis%20Intellectual%20Grooming%20School%2C%20I%20would%20like%20to%20ask%20about%20the%20%E2%82%A67%2C500%20Referral%20Cashback%20Programme." target="_blank" rel="noopener" class="btn btn-primary">Ask about the programme</a>
+            <a href="#contact" class="btn btn-ghost" data-enquiry="referral">Use the form</a>
+          </div>
+        </div>
+        <div class="amount"><b>₦7,500</b><span>cashback per student referral</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="gallery">
+    <div class="wrap">
+      <div class="head">
+        <h2>Life and learning at St. Louis</h2>
+        <p>Focused study, caring teachers and a calm place to grow.</p>
+      </div>
+      <div class="grid">
+        <figure><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Students learning in a classroom" loading="lazy" /><figcaption>Classroom learning</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Students in school activities" loading="lazy" /><figcaption>School activities</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80" alt="Orderly classroom" loading="lazy" /><figcaption>Serene spaces</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80" alt="Stack of books" loading="lazy" /><figcaption>Strong foundations</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Get in touch</h2>
+        <p style="margin-top:14px;">Reach out about admissions, enquiries or the referral programme. We reply on WhatsApp.</p>
+        <ul class="details">
+          <li>
+            <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><small>Phone</small><a href="tel:+2347060618913">+234 706 061 8913</a></div>
+          </li>
+          <li>
+            <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+            <div><small>WhatsApp</small><a href="https://wa.me/2347060618913" target="_blank" rel="noopener">wa.me/2347060618913</a></div>
+          </li>
+        </ul>
+        <a href="https://wa.me/2347060618913?text=Hello%20St.%20Louis%20Intellectual%20Grooming%20School%2C%20I%20would%20like%20to%20make%20an%20enquiry." target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;">Chat on WhatsApp</a>
+      </div>
+
+      <form id="enquiry-form">
+        <h3>Admission and general enquiry</h3>
+        <p>Fill in the details and your enquiry opens in WhatsApp, ready to send to the school.</p>
+        <div class="fields">
+          <div><label for="parent">Parent or guardian name</label><input id="parent" required placeholder="Your full name" /></div>
+          <div><label for="phone">Phone number</label><input id="phone" type="tel" required placeholder="+234 800 000 0000" /></div>
+          <div><label for="student">Student's name</label><input id="student" required placeholder="Student's full name" /></div>
+          <div>
+            <label for="type">Enquiry type</label>
+            <select id="type" required>
+              <option>New Student Admission Enquiry</option>
+              <option>Independent Examination Preparation Enquiry</option>
+              <option>Referral Cashback Programme (₦7,500)</option>
+              <option>General School Enquiry</option>
+            </select>
+          </div>
+          <div class="full"><label for="msg">Message</label><textarea id="msg" required placeholder="How can we help you and your child?"></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary">Send enquiry on WhatsApp</button>
+        <div id="feedback" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand">
+        <div class="crest"><img src="school-crest.png" alt="" onerror="this.remove(); this.parentNode.textContent='SL';" /></div>
+        <div class="brand-name">St. Louis Intellectual<small>Grooming School</small></div>
+      </div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#referral">Referral</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="copy">
+      <span>&copy; <span id="year"></span> St. Louis Intellectual Grooming School</span>
+      <span>Raising Champions. Building Independent Thinkers.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/2347060618913" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.492 5.448 5.601-1.469c1.906 1.259 4.185 1.988 6.607 1.988 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var btn = document.getElementById('menu-btn');
+  var menu = document.getElementById('menu');
+  btn.addEventListener('click', function () {
+    var open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(open));
+  });
+  menu.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  document.querySelectorAll('[data-enquiry]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      document.getElementById('type').selectedIndex =
+        el.getAttribute('data-enquiry') === 'referral' ? 2 : 0;
+    });
+  });
+
+  document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = function (id) { return document.getElementById(id).value.trim(); };
+    var text =
+      '*Website enquiry: St. Louis Intellectual Grooming School*\n\n' +
+      '*Parent/Guardian:* ' + v('parent') + '\n' +
+      '*Phone:* ' + v('phone') + '\n' +
+      '*Student:* ' + v('student') + '\n' +
+      '*Enquiry type:* ' + document.getElementById('type').value + '\n' +
+      '*Message:* ' + v('msg');
+    var fb = document.getElementById('feedback');
+    fb.style.display = 'block';
+    fb.textContent = 'Thank you, ' + v('parent') + '. Opening WhatsApp so you can send your enquiry.';
+    window.open('https://wa.me/2347060618913?text=' + encodeURIComponent(text), '_blank', 'noopener');
+  });
+</script>
+</body>
+</html>
